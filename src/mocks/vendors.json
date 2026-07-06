@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "company": "Dell Technologies",
+    "contact": "John Smith",
+    "email": "john@dell.com",
+    "phone": "9876543210",
+    "country": "USA",
+    "category": "Hardware",
+    "rating": 4.8,
+    "risk": "Low",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "company": "Microsoft",
+    "contact": "Alice Brown",
+    "email": "alice@microsoft.com",
+    "phone": "9876543211",
+    "country": "USA",
+    "category": "Cloud",
+    "rating": 4.9,
+    "risk": "Low",
+    "status": "Active"
+  },
+  {
+    "id": 3,
+    "company": "Oracle",
+    "contact": "David Wilson",
+    "email": "david@oracle.com",
+    "phone": "9876543212",
+    "country": "India",
+    "category": "Database",
+    "rating": 4.4,
+    "risk": "Medium",
+    "status": "Pending"
+  },
+  {
+    "id": 4,
+    "company": "Cisco",
+    "contact": "Jennifer Lee",
+    "email": "jennifer@cisco.com",
+    "phone": "9876543213",
+    "country": "Singapore",
+    "category": "Networking",
+    "rating": 4.6,
+    "risk": "Low",
+    "status": "Active"
+  },
+  {
+    "id": 5,
+    "company": "KPMG",
+    "contact": "Michael Scott",
+    "email": "michael@kpmg.com",
+    "phone": "9876543214",
+    "country": "UK",
+    "category": "Audit",
+    "rating": 4.2,
+    "risk": "High",
+    "status": "Inactive"
+  }
+]

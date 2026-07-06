@@ -1,0 +1,89 @@
+{
+  "stats": {
+    "totalRequests": 250,
+    "pendingRequests": 42,
+    "approvedRequests": 178,
+    "rejectedRequests": 30,
+    "vendors": 120,
+    "risks": 15,
+    "complianceIssues": 8
+  },
+  "chart": [
+    {
+      "name": "Jan",
+      "value": 12
+    },
+    {
+      "name": "Feb",
+      "value": 18
+    },
+    {
+      "name": "Mar",
+      "value": 25
+    },
+    {
+      "name": "Apr",
+      "value": 20
+    },
+    {
+      "name": "May",
+      "value": 28
+    },
+    {
+      "name": "Jun",
+      "value": 35
+    }
+  ],
+  "activities": [
+    {
+      "title": "Vendor ABC Registered",
+      "description": "Vendor onboarding completed.",
+      "status": "Completed",
+      "time": "10 min ago"
+    },
+    {
+      "title": "Procurement Approved",
+      "description": "Purchase request approved.",
+      "status": "Approved",
+      "time": "30 min ago"
+    },
+    {
+      "title": "Risk Assessment Updated",
+      "description": "Risk score modified.",
+      "status": "Updated",
+      "time": "1 hour ago"
+    },
+    {
+      "title": "Audit Completed",
+      "description": "Quarterly audit finished.",
+      "status": "Completed",
+      "time": "Today"
+    }
+  ],
+  "notifications": [
+    {
+      "title": "High Risk Vendor",
+      "message": "Vendor XYZ requires immediate review.",
+      "priority": "High",
+      "time": "5 min ago"
+    },
+    {
+      "title": "Pending Procurements",
+      "message": "3 procurements awaiting approval.",
+      "priority": "Medium",
+      "time": "20 min ago"
+    },
+    {
+      "title": "Audit Completed",
+      "message": "Internal audit completed.",
+      "priority": "Low",
+      "time": "Today"
+    },
+    {
+      "title": "Compliance Updated",
+      "message": "ISO checklist updated.",
+      "priority": "Low",
+      "time": "Yesterday"
+    }
+  ]
+}

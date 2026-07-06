@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Procurement Approved",
+    "message": "Cloud Infrastructure Purchase has been approved.",
+    "priority": "High",
+    "status": "Unread",
+    "time": "2 mins ago"
+  },
+  {
+    "id": 2,
+    "title": "Vendor Added",
+    "message": "New vendor Microsoft has been registered.",
+    "priority": "Medium",
+    "status": "Read",
+    "time": "15 mins ago"
+  },
+  {
+    "id": 3,
+    "title": "Risk Escalated",
+    "message": "Critical security vulnerability requires immediate attention.",
+    "priority": "High",
+    "status": "Unread",
+    "time": "30 mins ago"
+  },
+  {
+    "id": 4,
+    "title": "Compliance Review",
+    "message": "ISO 27001 compliance review is due this week.",
+    "priority": "Medium",
+    "status": "Unread",
+    "time": "1 hour ago"
+  },
+  {
+    "id": 5,
+    "title": "Audit Completed",
+    "message": "Business Continuity Audit has been completed successfully.",
+    "priority": "Low",
+    "status": "Read",
+    "time": "2 hours ago"
+  },
+  {
+    "id": 6,
+    "title": "Approval Pending",
+    "message": "Office Laptop Purchase is awaiting approval.",
+    "priority": "High",
+    "status": "Unread",
+    "time": "3 hours ago"
+  },
+  {
+    "id": 7,
+    "title": "Policy Updated",
+    "message": "Information Security Policy has been updated.",
+    "priority": "Low",
+    "status": "Read",
+    "time": "Yesterday"
+  },
+  {
+    "id": 8,
+    "title": "Vendor Contract Expiring",
+    "message": "Oracle support contract expires in 7 days.",
+    "priority": "High",
+    "status": "Unread",
+    "time": "Yesterday"
+  },
+  {
+    "id": 9,
+    "title": "Database Backup",
+    "message": "Nightly database backup completed successfully.",
+    "priority": "Low",
+    "status": "Read",
+    "time": "Yesterday"
+  },
+  {
+    "id": 10,
+    "title": "New User Registered",
+    "message": "A new Procurement Manager account was created.",
+    "priority": "Medium",
+    "status": "Unread",
+    "time": "Today"
+  }
+]

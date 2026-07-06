@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Administrator",
+    "email": "admin@egrcp.com",
+    "password": "admin123",
+    "role": "Admin"
+  },
+  {
+    "id": 2,
+    "name": "Procurement Manager",
+    "email": "manager@egrcp.com",
+    "password": "manager123",
+    "role": "Manager"
+  }
+]

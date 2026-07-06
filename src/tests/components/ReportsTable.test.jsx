@@ -1,0 +1,355 @@
+import { render, screen, fireEvent } from "@testing-library/react";
+import ReportsTable from "../../components/reports/ReportsTable";
+import { deleteReport } from "../../services/reportService";
+
+jest.mock("../../services/reportService", () => ({
+  deleteReport: jest.fn(() => Promise.resolve()),
+}));
+
+jest.mock("../../components/reports/DeleteReportDialog", () => (props) =>
+  props.open ? (
+    <button onClick={props.onConfirm}>
+      Confirm Delete
+    </button>
+  ) : null
+);
+
+const rows = [
+  {
+    id: 1,
+    title: "Risk Report",
+    type: "Risk",
+    generatedBy: "Admin",
+    generatedDate: "2026-07-01",
+    status: "Generated",
+    downloads: 25,
+  },
+  {
+    id: 2,
+    title: "Vendor Report",
+    type: "Vendor",
+    generatedBy: "Manager",
+    generatedDate: "2026-07-02",
+    status: "Scheduled",
+    downloads: 15,
+  },
+];
+
+describe("ReportsTable", () => {
+  const refresh = jest.fn();
+  const onEdit = jest.fn();
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  test("renders reports", () => {
+    render(
+      <ReportsTable
+        rows={rows}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    expect(
+      screen.getByText("Risk Report")
+    ).toBeInTheDocument();
+
+    expect(
+      screen.getByText("Vendor Report")
+    ).toBeInTheDocument();
+  });
+
+  test("shows empty state", () => {
+    render(
+      <ReportsTable
+        rows={[]}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    expect(
+      screen.getByText(/No Reports Found/i)
+    ).toBeInTheDocument();
+  });
+
+  test("opens details dialog", () => {
+    render(
+      <ReportsTable
+        rows={rows}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    fireEvent.click(
+      screen.getAllByTitle("View")[0]
+    );
+
+    expect(
+      screen.getByText(/Report Details/i)
+    ).toBeInTheDocument();
+
+    expect(
+      screen.getByText("Risk Report")
+    ).toBeInTheDocument();
+  });
+
+  test("closes details dialog", () => {
+    render(
+      <ReportsTable
+        rows={rows}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    fireEvent.click(
+      screen.getAllByTitle("View")[0]
+    );
+
+    fireEvent.click(
+      screen.getByText("Close")
+    );
+  });
+
+  test("calls edit", () => {
+    render(
+      <ReportsTable
+        rows={rows}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    fireEvent.click(
+      screen.getAllByTitle("Edit")[0]
+    );
+
+    expect(onEdit).toHaveBeenCalled();
+  });
+
+  test("sort title", () => {
+    render(
+      <ReportsTable
+        rows={rows}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    fireEvent.click(
+      screen.getByText("Title")
+    );
+
+    fireEvent.click(
+      screen.getByText("Title")
+    );
+  });
+
+  test("changes rows per page", () => {
+    render(
+      <ReportsTable
+        rows={rows}
+        refresh={refresh}
+        onEdit={onEdit}
+      />
+    );
+
+    fireEvent.change(
+      screen.getByLabelText(
+        /Rows per page/i
+      ),
+      {
+        target: {
+          value: "10",
+        },
+      }
+    );
+  });
+  
+});
+
+test("delete report", async () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  fireEvent.click(
+    screen.getAllByTitle("Delete")[0]
+  );
+
+  fireEvent.click(
+    screen.getByText("Confirm Delete")
+  );
+
+  expect(deleteReport).toHaveBeenCalledWith(1);
+});
+
+test("refresh after delete", async () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  fireEvent.click(
+    screen.getAllByTitle("Delete")[0]
+  );
+
+  fireEvent.click(
+    screen.getByText("Confirm Delete")
+  );
+
+  expect(refresh).toHaveBeenCalled();
+});
+
+test("shows generated status", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getByText("Generated")
+  ).toBeInTheDocument();
+});
+
+test("shows scheduled status", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getByText("Scheduled")
+  ).toBeInTheDocument();
+});
+
+test("renders download count", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getByText("25")
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText("15")
+  ).toBeInTheDocument();
+});
+
+test("renders report type", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getByText("Risk")
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText("Vendor")
+  ).toBeInTheDocument();
+});
+
+test("renders generated by", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getByText("Admin")
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText("Manager")
+  ).toBeInTheDocument();
+});
+
+test("renders generated date", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getByText("2026-07-01")
+  ).toBeInTheDocument();
+
+  expect(
+    screen.getByText("2026-07-02")
+  ).toBeInTheDocument();
+});
+
+test("opens delete dialog", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  fireEvent.click(
+    screen.getAllByTitle("Delete")[0]
+  );
+
+  expect(
+    screen.getByText("Confirm Delete")
+  ).toBeInTheDocument();
+});
+
+test("renders actions", () => {
+  render(
+    <ReportsTable
+      rows={rows}
+      refresh={refresh}
+      onEdit={onEdit}
+    />
+  );
+
+  expect(
+    screen.getAllByTitle("View").length
+  ).toBeGreaterThan(0);
+
+  expect(
+    screen.getAllByTitle("Edit").length
+  ).toBeGreaterThan(0);
+
+  expect(
+    screen.getAllByTitle("Delete").length
+  ).toBeGreaterThan(0);
+}
+)
+;

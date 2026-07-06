@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Monthly Procurement",
+    "type": "Procurement",
+    "created": "2026-07-05"
+  },
+  {
+    "id": 2,
+    "name": "Vendor Risk Report",
+    "type": "Vendor",
+    "created": "2026-07-04"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise Risk",
+    "type": "Risk",
+    "created": "2026-07-03"
+  },
+  {
+    "id": 4,
+    "name": "ISO Compliance",
+    "type": "Compliance",
+    "created": "2026-07-02"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "policy": "ISO 27001 Access Control",
+    "control": "User Access Management",
+    "owner": "Security Team",
+    "framework": "ISO 27001",
+    "status": "Compliant",
+    "reviewDate": "2026-08-15",
+    "evidence": "ISO_Access_Report.pdf"
+  },
+  {
+    "id": 2,
+    "policy": "SOC 2 Encryption",
+    "control": "Data Encryption",
+    "owner": "IT Team",
+    "framework": "SOC 2",
+    "status": "In Review",
+    "reviewDate": "2026-08-20",
+    "evidence": "Encryption_Report.pdf"
+  },
+  {
+    "id": 3,
+    "policy": "GDPR Privacy",
+    "control": "Personal Data Protection",
+    "owner": "Compliance Team",
+    "framework": "GDPR",
+    "status": "Non-Compliant",
+    "reviewDate": "2026-08-28",
+    "evidence": "GDPR_Audit.pdf"
+  },
+  {
+    "id": 4,
+    "policy": "PCI DSS Payment Security",
+    "control": "Cardholder Data Protection",
+    "owner": "Finance Team",
+    "framework": "PCI DSS",
+    "status": "Compliant",
+    "reviewDate": "2026-09-05",
+    "evidence": "PCI_Report.pdf"
+  },
+  {
+    "id": 5,
+    "policy": "HIPAA Healthcare Data",
+    "control": "Medical Record Security",
+    "owner": "Healthcare Team",
+    "framework": "HIPAA",
+    "status": "In Review",
+    "reviewDate": "2026-09-10",
+    "evidence": "HIPAA_Report.pdf"
+  },
+  {
+    "id": 6,
+    "policy": "ISO 22301 Business Continuity",
+    "control": "Disaster Recovery",
+    "owner": "Infrastructure Team",
+    "framework": "ISO 22301",
+    "status": "Compliant",
+    "reviewDate": "2026-09-15",
+    "evidence": "BCP_Test.pdf"
+  },
+  {
+    "id": 7,
+    "policy": "NIST Password Policy",
+    "control": "Strong Password Enforcement",
+    "owner": "IT Security",
+    "framework": "NIST",
+    "status": "Compliant",
+    "reviewDate": "2026-09-22",
+    "evidence": "Password_Audit.pdf"
+  },
+  {
+    "id": 8,
+    "policy": "ISO 27017 Cloud Security",
+    "control": "Cloud Resource Protection",
+    "owner": "Cloud Team",
+    "framework": "ISO 27017",
+    "status": "In Review",
+    "reviewDate": "2026-09-30",
+    "evidence": "Cloud_Security.pdf"
+  },
+  {
+    "id": 9,
+    "policy": "CIS Controls",
+    "control": "Endpoint Protection",
+    "owner": "Endpoint Team",
+    "framework": "CIS",
+    "status": "Non-Compliant",
+    "reviewDate": "2026-10-05",
+    "evidence": "Endpoint_Audit.pdf"
+  },
+  {
+    "id": 10,
+    "policy": "ISO 27701 Privacy",
+    "control": "PII Management",
+    "owner": "Privacy Office",
+    "framework": "ISO 27701",
+    "status": "Compliant",
+    "reviewDate": "2026-10-12",
+    "evidence": "Privacy_Compliance.pdf"
+  }
+]

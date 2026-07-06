@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Monthly Risk Report",
+    "type": "Risk",
+    "generatedBy": "Admin",
+    "generatedDate": "2026-08-01",
+    "status": "Generated",
+    "downloads": 24
+  },
+  {
+    "id": 2,
+    "title": "Vendor Performance Report",
+    "type": "Vendor",
+    "generatedBy": "Procurement Team",
+    "generatedDate": "2026-08-05",
+    "status": "Generated",
+    "downloads": 16
+  },
+  {
+    "id": 3,
+    "title": "Compliance Summary",
+    "type": "Compliance",
+    "generatedBy": "Compliance Team",
+    "generatedDate": "2026-08-08",
+    "status": "Scheduled",
+    "downloads": 0
+  },
+  {
+    "id": 4,
+    "title": "Internal Audit Report",
+    "type": "Audit",
+    "generatedBy": "Audit Team",
+    "generatedDate": "2026-08-10",
+    "status": "Generated",
+    "downloads": 31
+  },
+  {
+    "id": 5,
+    "title": "Cyber Security Dashboard",
+    "type": "Security",
+    "generatedBy": "Security Team",
+    "generatedDate": "2026-08-12",
+    "status": "Failed",
+    "downloads": 0
+  },
+  {
+    "id": 6,
+    "title": "Quarterly Procurement Report",
+    "type": "Procurement",
+    "generatedBy": "Admin",
+    "generatedDate": "2026-08-15",
+    "status": "Generated",
+    "downloads": 19
+  },
+  {
+    "id": 7,
+    "title": "Financial Compliance Report",
+    "type": "Finance",
+    "generatedBy": "Finance Team",
+    "generatedDate": "2026-08-18",
+    "status": "Scheduled",
+    "downloads": 0
+  },
+  {
+    "id": 8,
+    "title": "Data Privacy Report",
+    "type": "Privacy",
+    "generatedBy": "Privacy Team",
+    "generatedDate": "2026-08-20",
+    "status": "Generated",
+    "downloads": 12
+  },
+  {
+    "id": 9,
+    "title": "Cloud Infrastructure Report",
+    "type": "Infrastructure",
+    "generatedBy": "IT Team",
+    "generatedDate": "2026-08-22",
+    "status": "Generated",
+    "downloads": 27
+  },
+  {
+    "id": 10,
+    "title": "Executive GRC Summary",
+    "type": "Executive",
+    "generatedBy": "Administrator",
+    "generatedDate": "2026-08-25",
+    "status": "Generated",
+    "downloads": 45
+  }
+]

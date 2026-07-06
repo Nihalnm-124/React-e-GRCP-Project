@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Cloud Infrastructure Purchase",
+    "requester": "John Smith",
+    "department": "IT",
+    "amount": 250000,
+    "priority": "High",
+    "status": "Pending",
+    "date": "2026-07-01"
+  },
+  {
+    "id": 2,
+    "title": "Vendor Contract Renewal",
+    "requester": "Emma Johnson",
+    "department": "Procurement",
+    "amount": 85000,
+    "priority": "Medium",
+    "status": "Approved",
+    "date": "2026-07-02"
+  },
+  {
+    "id": 3,
+    "title": "Cyber Security Audit",
+    "requester": "Sophia Davis",
+    "department": "Security",
+    "amount": 180000,
+    "priority": "Critical",
+    "status": "Escalated",
+    "date": "2026-07-03"
+  },
+  {
+    "id": 4,
+    "title": "Office Laptop Purchase",
+    "requester": "Michael Scott",
+    "department": "IT",
+    "amount": 95000,
+    "priority": "Low",
+    "status": "Rejected",
+    "date": "2026-07-01"
+  },
+  {
+    "id": 5,
+    "title": "Database License Renewal",
+    "requester": "Jennifer Lee",
+    "department": "Database",
+    "amount": 145000,
+    "priority": "High",
+    "status": "Pending",
+    "date": "2026-07-04"
+  },
+  {
+    "id": 6,
+    "title": "Network Upgrade",
+    "requester": "Olivia Martin",
+    "department": "Infrastructure",
+    "amount": 210000,
+    "priority": "Critical",
+    "status": "Pending",
+    "date": "2026-07-05"
+  },
+  {
+    "id": 7,
+    "title": "Annual Software Subscription",
+    "requester": "Daniel Wilson",
+    "department": "Finance",
+    "amount": 125000,
+    "priority": "Medium",
+    "status": "Approved",
+    "date": "2026-07-02"
+  },
+  {
+    "id": 8,
+    "title": "Firewall Upgrade",
+    "requester": "Chris Brown",
+    "department": "Security",
+    "amount": 175000,
+    "priority": "Critical",
+    "status": "Escalated",
+    "date": "2026-07-05"
+  },
+  {
+    "id": 9,
+    "title": "Printer Procurement",
+    "requester": "David Miller",
+    "department": "Admin",
+    "amount": 35000,
+    "priority": "Low",
+    "status": "Rejected",
+    "date": "2026-07-03"
+  },
+  {
+    "id": 10,
+    "title": "Cloud Backup Solution",
+    "requester": "Sarah White",
+    "department": "IT",
+    "amount": 160000,
+    "priority": "High",
+    "status": "Pending",
+    "date": "2026-07-05"
+  }
+]

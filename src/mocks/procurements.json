@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Office Laptop Purchase",
+    "vendor": "Dell",
+    "department": "IT",
+    "amount": 85000,
+    "status": "Approved",
+    "date": "2026-06-20"
+  },
+  {
+    "id": 2,
+    "title": "Cloud Subscription",
+    "vendor": "Microsoft",
+    "department": "Cloud",
+    "amount": 120000,
+    "status": "Pending",
+    "date": "2026-06-22"
+  },
+  {
+    "id": 3,
+    "title": "Network Switches",
+    "vendor": "Cisco",
+    "department": "Infrastructure",
+    "amount": 95000,
+    "status": "Approved",
+    "date": "2026-06-25"
+  },
+  {
+    "id": 4,
+    "title": "Cyber Security Audit",
+    "vendor": "KPMG",
+    "department": "Security",
+    "amount": 180000,
+    "status": "Rejected",
+    "date": "2026-06-27"
+  },
+  {
+    "id": 5,
+    "title": "Database Licenses",
+    "vendor": "Oracle",
+    "department": "Database",
+    "amount": 145000,
+    "status": "Pending",
+    "date": "2026-06-29"
+  }
+]
